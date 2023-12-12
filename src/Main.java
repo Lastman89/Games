@@ -82,9 +82,7 @@ public class Main {
 
 
         try (FileWriter writer = new FileWriter("D:\\Учеба\\JAVA\\Progi\\Core\\Games\\Games\\temp\\temp.txt", false)) {
-            // запись всей строки
             writer.write(logs.toString());
-            // дозаписываем и очищаем буфер
             writer.flush();
         } catch (IOException ex) {
             System.out.println(ex.getMessage());
